@@ -1,4 +1,5 @@
 fluent-api
 ==========
 
-An IntelliJ (>12.0) plugin which allows to generate fluent API on POJO
+An IntelliJ plugin which allows to generate fluent API on POJO.
+This plugin is compatible with IDEA > v12.0.
