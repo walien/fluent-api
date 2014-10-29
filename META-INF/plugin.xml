@@ -1,0 +1,45 @@
+<idea-plugin version="2">
+  <id>com.walien.plugins.fluent-api</id>
+  <name>Fluent API</name>
+  <version>1.0</version>
+  <vendor email="eoriou@gmail.com" url="http://about.me/eoriou">Elian ORIOU</vendor>
+
+  <description><![CDATA[
+      Generates all getters and fluent setters of a java class<br>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Initial version.
+    ]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="123"/>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+      <action id="fluent-api-generate-setters" class="com.walien.plugins.GenerateGettersAndSettersAction"
+              text="Generate fluent getters and setters" description="A way to generate fluent getters and setters into POJO">
+          <add-to-group group-id="JavaGenerateGroup1" anchor="first"/>
+      </action>
+  </actions>
+
+</idea-plugin>
